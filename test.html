@@ -1,70 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>your page title goes here</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="">
-  <style>
-    section {
-      border: 1px solid black;
-      padding: 10px 10px 60px;
-      width: 780px;
-    }
-
-    aside {
-      border: 1px solid black;
-      display: inline-block;
-    }
-
-    .relative {
-      background-color: yellow;
-      height: 200px;
-      left: 0;
-      margin: 0 25px;
-      position: relative;
-      top: 0;
-      width: 200px;
-    }
-
-    .absolute-1 {
-      background-color: lightgreen;
-      bottom: 33%;
-      left: 33%;
-      position: absolute;
-      right: 33%;
-      top: 33%;
-    }
-
-    .absolute-2 {
-      background-color: cyan;
-      bottom: 150px;
-      left: 0;
-      position: absolute;
-      right: 20px;
-      top: 0
-    }
-
-    .absolute-3 {
-      background-color: pink;
-      bottom: -50px;
-      left: 100px;
-      position: absolute;
-      right: -40px;
-      top: 150px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Positioning</title>
 </head>
 <body>
-  <section>
-    <aside class="relative">
-      <div class="absolute-1"></div>
-    </aside>
-    <aside class="relative">
-      <div class="absolute-2"></div>
-    </aside>
-    <aside class="relative">
-      <div class="absolute-3"></div>
-    </aside>
-  </section>
+  <div class="container">
+    <section>
+      <header>
+        <h1>Inline Elements</h1>
+        <p>Inline elements occupy the space required by the content, and nothing more. They do not take width and height values.</p>
+      </header>
+
+      <h2>Example</h2>
+      <p>Anchor tags are inline elements: they take up the width required by their content and not the entire width of the page.</p>
+
+      <div class="border">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <h2>What happens when we set a margin on an inline-level element?</h2>
+      <p>Inline elements ignore top and bottom margins but observe the left and right margins.</p>
+
+      <div class="border inline-margin">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <p>In the above example, we requested a margin of 30px on all sides. However, the browser ignored top and bottom margins.</p>
+
+      <h2>What about padding?</h2>
+      <div class="border inline-padding">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <p>Inline elements accept padding on all sides.</p>
+
+      <h2>Floating Inline Elements</h2>
+      <div class="border inline-margin inline-padding floating">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <p>Floating an inline element chnanges its display value to block, which makes it subject to all block-level characteristics. Thus, floated inline elements can take margins, padding, heights, and widths.</p>
+    </section>
+  </div>
 </body>
 </html>

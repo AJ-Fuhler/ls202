@@ -63,6 +63,7 @@
         and widths.
       </p>
     </section>
+
     <section class="block">
       <h1>Block Elements</h1>
       <p>
@@ -132,8 +133,70 @@
         the other right.
       </p>
 
+      <h3>Floating block elements with width and height set.</h3>
+
+      <div class="wrapper cf">
+        <div class="fl-3">Box - 1 - Floated Left</div>
+        <div class="fl-4">Box - 2 - Floated Right</div>
+      </div>
+
+      <p>
+        When you specify the widths on floated block-level elements, the
+        browser will observe the widths. In the above example, our blocks have
+        widths of 40% and 50%.
+      </p>
+
       <h3>Can we change an inline element into a block element?</h3>
       <p>Let's use the anchor tag as an example.</p>
+
+      <div class="wrapper">
+        <a class="bl-a" href="#">Home</a>
+        <a class="bl-a" href="#">About</a>
+        <a class="bl-a" href="#">Contact</a>
+      </div>
+
+      <p>
+        Yes, we can change a block element to an inline and vice versa. You
+        can change the <code>display</code> property regardless of the
+        previous value.
+      </p>
+    </section>
+
+    <section class="inline-block">
+      <h1>Inline-Block Elements</h1>
+      <p>
+        Inline-block elements are inline elements that take on most block
+        element properties, such as width and height.
+      </p>
+
+      <h2>Example</h2>
+      <p>Let's use <code>inline-block</code> to create a navigation bar:</p>
+
+      <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <p>
+        We achieved similar results when we floated the anchor elements. It's
+        as though you get two elements in one: you have the flow properties of
+        inline elements combined with most properties of block elements.
+      </p>
+    </section>
+
+    <section class="pos-fl">
+      <h1>Floats and Positioning Elements</h1>
+
+      <h2>Floats</h2>
+      <p>
+        The browser removes floated elements from the normal flow. Floated
+        elements automatically become block-level elements with change:
+        two or more floated elements can fit on the same line.
+      </p>
+
+      <h2>Example</h2>
     </section>
   </div>
 </body>

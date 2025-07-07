@@ -38,7 +38,7 @@
 
       <p>
         In the above example, we requested a margin of 30px on all sides.
-        However, the browser ignored top and bottom margins.</p>
+        However, the browser ignored the top and bottom margins.</p>
 
       <h2>What about padding?</h2>
       <div class="border inline-padding">
@@ -57,7 +57,7 @@
       </div>
 
       <p>
-        Floating an inline element chnanges its display value to block,
+        Floating an inline element changes its display value to block,
         which makes it subject to all block-level characteristics. Thus,
         floated inline elements can take margins, padding, heights,
         and widths.
@@ -78,45 +78,48 @@
         <code>div</code> elements are block-level.
       </p>
 
-      <div class="box-1">
-        This <code>div</code> has no explicit width or height.
+      <div class="wrapper">
+        <div class="box-1">
+          This <code>div</code> has no explicit width or height.
+        </div>
+
+        <p>
+          Without an explicit width or height, the box fills the entire width and
+          uses as much height as it needs to fit the content.
+        </p>
+
+        <div class="box-2">
+          This <code>div</code> has no explicit width but a height of 60px; it
+          also has both padding and margins of 20px on all sides.
+        </div>
+
+        <p>
+          With an explicit height of 60px plus margins and padding, the box
+          still fills the entire width (including the padding and margins), but now
+          requires the requested height.
+        </p>
+
+        <div class="box-3">
+          This <code>div</code> has a width of 90px and no explicit height.
+        </div>
+
+        <p>
+          With an explicit width of 90px, the box collapses down to 90px width
+          but expands the height to ensure the text still fits.
+        </p>
+
+        <div class="box-4">
+          This <code>div</code> has a width of 180px and a height of 120px; it
+          also has both padding and margins of 20px on all sides.
+        </div>
+
+        <p>
+          With an explicit width of 180px and height of 120px, the box takes on
+          the requested dimensions. However, the content can overflow the box
+          as it does here.
+        </p>
       </div>
 
-      <p>
-        Without an explicit width or height, the box fills the entire width and
-        uses as much height as it needs to fit the content.
-      </p>
-
-      <div class="box-2">
-        This <code>div</code> has no explicit width but a height of 60px; it
-        also has both padding and margins of 20px on all sides.
-      </div>
-
-      <p>
-        With an explicit height of 60px plus margins and padding, the box
-        still filles the entire width (including padding and margins), but now
-        requires the requested height.
-      </p>
-
-      <div class="box-3">
-        This <code>div</code> has a width of 90px and no explicit height.
-      </div>
-
-      <p>
-        With an explicit width of 90px, the box collapses down to 90px width
-        but expands the height to ensure the text still fits.
-      </p>
-
-      <div class="box-4">
-        This <code>div</code> has a width of 180px and a height of 120px; it
-        also has both padding and margins of 20px on all sides.
-      </div>
-
-      <p>
-        With an explicit width of 180px and height of 120px, the box takes on
-        the requested dimenstion. However, the content can overflow the box
-        as it does here.
-      </p>
 
       <h2>Floating Block Elements</h2>
       <h3>Floating block elements with no width or height</h3>
@@ -300,6 +303,23 @@
           repellendus numquam blanditiis perferendis?
         </p>
       </section>
+    <section class="pos-abs">
+      <h2>Absolute Positioning</h2>
+
+      <p>
+        Absolute positioning removes an element from the normal page flow and
+        positions it at an absolulte position relative to its parent element.
+        If the parent element is the <code>&lt;body&gt;</code>, the position is
+        absolute relative to the complete page.
+      </p>
+
+      <p>
+        The green box shown uses absolute positioning.
+      </p>
+      <div class="wrap">
+        <div>I use absolute positioning.</div>
+      </div>
+    </section>
     </section>
   </div>
 </body>

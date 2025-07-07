@@ -173,3 +173,73 @@ section .floating {
   padding-top: 30px;
   width: 100%;
 }
+
+.pos-fl h1 {
+  text-align: center;
+}
+
+.pos-fl .wrapper {
+  margin-bottom: 35px;
+}
+
+.pos-fl .wrapper .flbx-1 {
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  float: left;
+  width: 50%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.pos-fl .wrapper .flbx-2 {
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  float: right;
+  width: 50%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.pos-fl .wrapper .flbx-3 {
+  background-color: seagreen;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  clear: both;
+}
+
+.pos ul li {
+  font-style: italic;
+  margin: 0 0 8px 40px;
+}
+
+.pos-fixed div {
+  width: 225px;
+  padding: 25px 35px;
+  text-align: center;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 50px;
+  left: 35px;
+}
+
+.pos-rel div {
+  width: 325px;
+  padding: 25px 35px;
+  text-align: center;
+  background-color: tomato;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  bottom: -45px;
+  right: 90px;
+  margin-bottom: 30px;
+}

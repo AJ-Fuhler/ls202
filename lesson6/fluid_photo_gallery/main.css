@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: rgb(19, 17, 17);
+  min-width: 500px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 20px
+}
+
+header h1 {
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+
+.central-photo img {
+  width: 100%;
+}
+
+.central-photo figcaption {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.thumbnail-elements {
+  display: flex;
+  gap: 2%;
+}
+
+.thumbnail-elements img {
+  min-width: 0px;
+}
+

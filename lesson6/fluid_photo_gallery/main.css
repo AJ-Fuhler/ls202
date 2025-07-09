@@ -1,44 +1,130 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
-  color: white;
+  background-color: #0d0d0d;
+  color: silver;
+  font: bold 14px Helvetica, Arial, sans-serif;
 }
 
-body {
-  background-color: rgb(19, 17, 17);
-  min-width: 500px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.container {
-  padding: 20px
-}
-
-header h1 {
+h1 {
   text-align: center;
-  margin: 30px auto 0 auto;
 }
 
-.central-photo img {
+figcaption {
+  margin-top: 5px;
+}
+
+img {
   width: 100%;
 }
 
-.central-photo figcaption {
-  font-weight: bold;
-  margin-bottom: 30px;
+main {
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header header"
+    "mainphoto mainphoto"
+    "thumb1 thumb2"
+    "thumb3 thumb4"
+    "thumb5 thumb6"
+    "thumb7 thumb8";
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.thumbnail-elements {
-  display: flex;
-  gap: 2%;
+header {
+  grid-area: header;
 }
 
-.thumbnail-elements img {
-  min-width: 0px;
+.main-photo {
+  grid-area: mainphoto;
 }
 
+.thumb1 {
+  grid-area: thumb1;
+}
+
+.thumb1 {
+  grid-area: thumb1;
+}
+
+.thumb2 {
+  grid-area: thumb2;
+}
+
+.thumb3 {
+  grid-area: thumb3;
+}
+
+.thumb4 {
+  grid-area: thumb4;
+}
+
+.thumb5 {
+  grid-area: thumb5;
+}
+
+.thumb6 {
+  grid-area: thumb6;
+}
+
+.thumb7 {
+  grid-area: thumb7;
+}
+
+.thumb8 {
+  grid-area: thumb8;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    grid-template-areas:
+      "header header header"
+      "mainphoto mainphoto mainphoto"
+      "thumb1 thumb2 thumb3"
+      "thumb4 thumb5 thumb6"
+      "thumb7 thumb8 .";
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    grid-template-areas:
+      "header header header header"
+      "mainphoto mainphoto mainphoto mainphoto"
+      "thumb1 thumb2 thumb3 thumb4"
+      "thumb5 thumb6 thumb7 thumb8";
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  figcaption {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .main-photo {
+    max-width: 950px;
+  }
+
+  main {
+    grid-template-areas:
+      "header header"
+      "mainphoto thumb1"
+      "mainphoto thumb2"
+      "mainphoto thumb3"
+      "mainphoto thumb4"
+      "mainphoto thumb5"
+      "mainphoto thumb6"
+      "mainphoto thumb7"
+      "mainphoto thumb8";
+      grid-template-columns: 950px 1fr;
+  }
+}

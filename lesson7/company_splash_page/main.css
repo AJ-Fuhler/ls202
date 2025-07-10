@@ -1,0 +1,86 @@
+@import url(normalize.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background: url(bg_body.gif);
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer {
+  padding: 0;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header h1 img {
+  display: block;
+  margin: 158px auto 95px;
+}
+
+main {
+  padding: 100px 95px 70px;
+  background-color: white;
+  color: #43474B;
+}
+
+p {
+  line-height: 28px;
+  text-align: center;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 36px;
+}
+
+
+main h3 {
+  color: #3E98B2;
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+main span {
+  font-size: 28px;
+  margin: 0 25px;
+  vertical-align: 5px;
+}
+
+main article:first-of-type {
+  margin-bottom: 160px;
+}
+
+footer {
+  background-color: #E7E7E7;
+  padding: 33px 0 27px;
+  margin-bottom: 140px;
+}
+
+footer ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+footer li {
+  display: inline;
+  padding: 0 58px;
+}
+
+footer img {
+
+}

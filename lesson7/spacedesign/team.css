@@ -34,12 +34,12 @@ nav a.active {
 }
 
 main {
-  padding: 100px 0 0 0;
+  padding: 100px 0 200px 0;
   background-color: #ffffff;
 }
 
 h2 {
-  padding: 0 0 40px 0;
+  padding: 20px 0 40px 0;
   font-size: 36px;
   font-weight: 600;
 }
@@ -53,19 +53,25 @@ h2::after {
   vertical-align: 5px;
 }
 
-h3 {
-  padding-bottom: 20px;
-  font-size: 24px;
-  color: #3e59b2;
-}
-
 .column {
   width: 800px;
   margin: 0 auto;
 }
 
-article {
-  padding: 0 0 100px 0;
+.team-photos {
+  margin: 120px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo-name-container img {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.photo-name-container a {
+  text-decoration: none;
+  font-size: 24px;
 }
 
 footer {

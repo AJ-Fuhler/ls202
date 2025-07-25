@@ -34,12 +34,12 @@ nav a.active {
 }
 
 main {
-  padding: 100px 0 0 0;
+  padding: 100px 0 25px 0;
   background-color: #ffffff;
 }
 
 h2 {
-  padding: 0 0 40px 0;
+  padding: 20px 0 40px 0;
   font-size: 36px;
   font-weight: 600;
 }
@@ -54,18 +54,31 @@ h2::after {
 }
 
 h3 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-size: 24px;
+  font-weight: 800;
   color: #3e59b2;
 }
 
 .column {
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
 }
 
+.column img {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.column p {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.75rem;
+}
+
 article {
-  padding: 0 0 100px 0;
+  padding: 0 0 28px 0;
 }
 
 footer {
